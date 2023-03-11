@@ -1638,3 +1638,42 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+.dropbtn {
+  background-color: #14151c;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px;
+  border-radius: 50px;
+}
+
+.dropdown-footer {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: -webkit-left;
+  margin: 10px 10px;
+}
+
+.dropdown-content a:hover {background-color: #043f87; border-radius:20px; color: white;}
+
+.dropdown-footer:hover .dropdown-content {display: block;}
+
+.dropdown-footer:hover .dropbtn {background-color: #043f87;}
