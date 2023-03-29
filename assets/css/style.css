@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #fc8129;
+  color: white !important;
   text-decoration: none;
 }
 
@@ -347,9 +347,24 @@ h6 {
   position: relative;
   /*background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%),url("../img/hero-bg.jpg");*/
   /*background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/bg_new.jpg") center top no-repeat;*/
-  background-image: url("../img/bg_new.jpg");
+  background-image: url("../img/bg_6.jpg");
   padding: 0;
+  
+  
 }
+
+.heroheading1{
+  font-family: 'Luminari' , fantasy;
+  color:#044191 !important;
+  font-weight: bolder !important;
+}
+
+.herotext1{
+  font-size:20px;
+  color:white !important;
+  font-family: 'Aclonica' , sans-serif !important;
+}
+
 
 #hero .carousel-container {
   display: flex;
@@ -365,7 +380,7 @@ h6 {
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
-  font-size: 48px;
+  font-size: 65px;
   font-weight: 700;
 }
 
@@ -385,10 +400,12 @@ h6 {
 #hero .carousel-control-next-icon,
 #hero .carousel-control-prev-icon {
   background: none;
-  font-size: 48px;
+  font-size: 70px;
   line-height: 1;
   width: auto;
   height: auto;
+  color: white !important;
+  font-weight: 600 !important;
 }
 
 #hero .btn-get-started {
@@ -405,12 +422,16 @@ h6 {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #043f87;
+  /*border: 2px solid #043f87;*/
+  background: #044191;
 }
 
 #hero .btn-get-started:hover {
-  background: #043f87;
-  color: #fff;
+  background: white;
+  color: #043f87 !important;
+  border: 2px solid #043f87 !important;
+  font-size: 15px;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -811,6 +832,7 @@ section {
 
 .services .title a:hover {
   color: #043f87;
+  font-weight: bold;
 }
 
 .services .description {
@@ -1059,7 +1081,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #fedac0;
+  color: lightblue;
   font-size: 26px;
 }
 
@@ -1499,7 +1521,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #fc8129;
+  background: #5099f2;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1661,7 +1683,6 @@ section {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 20px;
-  width:max-content;
 }
 
 .dropdown-content a {
@@ -1671,6 +1692,7 @@ section {
   display: block;
   text-align: -webkit-left;
   margin: 10px 10px;
+  width: max-content;
 }
 
 .dropdown-content a:hover {background-color: #043f87; border-radius:20px; color: white;}
@@ -1678,3 +1700,126 @@ section {
 .dropdown-footer:hover .dropdown-content {display: block;}
 
 .dropdown-footer:hover .dropbtn {background-color: #043f87;}
+
+@media screen and (max-width: 800px) and (min-width : 420px) {
+
+  .align_tile
+  {
+    margin-left: 180px;
+  }
+  
+}
+
+@media screen and (max-width: 800px) and (min-width : 420px) {
+
+  .flipcard_align
+  {
+    
+    margin-left:200px;
+    margin-top: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 500px){
+  .screen_align{
+    margin-top: 50px;
+  }
+
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  padding-top: 10px;
+}
+
+.flipcardtext{
+  font-weight: bold;
+}
+
+.flipcardbutton{
+  border-radius: 10px;
+  border: 2px solid #043f87;
+  background: white;
+  padding : 10px 15px;
+  margin-top: 10px;
+}
+
+.flipcardbutton:hover{
+  background: #043f87;
+  color: #fff;
+  text-decoration: none;
+}
+
+.innerpageheading{
+  font-size: 90px;
+  font-weight: 600;
+  background-image: radial-gradient(circle, #553c9a, #ee4b2b) !important;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: center;
+  word-break: break-all;
+  font-family: 'Brush Script MT', cursive;
+
+}
+
+.innerpagetext{
+  text-align: center;
+  margin-top: 20px;
+  font-size:20px
+}
+
+.inner-page{
+  background-color: beige;
+}
+
+.innerpagelist{
+  
+  font-size:20px
+}
+
+/*.buttoncarousel :hover{
+  color : #044191 !important;
+}*/
+
+
+
+
+

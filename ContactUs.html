@@ -94,38 +94,68 @@
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <section class="inner-page">
-      <div class="container">
-      <div div class="row"  >
-        <h1 class="innerpageheading">
-          Language Translation
-        </h1>
-      </div>
-      <div class="row">
-        <video width="320" height="240" autoplay loop>
-          <source src="../assets/videos/languagetranslation.mp4" type="video/mp4">
-        
-        </video>
-      </div>
-        <div class="row" >
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <P class="innerpagetext">In recent years, there has been a significant improvement in language transcription and translation services due to advances
-              in artificial intelligence and machine learning. These advancements have made it possible to develop more accurate and efficient
-              language transcription and translation tools that can translate entire sentences and paragraphs in real-time. With these advancements,
-              it is now easier for people to communicate with each other across language barriers, whether it is for business or personal reasons.
-            </P>
-            <P class="innerpagetext">
-            The most notable improvements have been in the areas of speech recognition and natural language processing. Language transcription services
-             can now recognize a wider range of accents and dialects, making it easier for people from different parts of the world to communicate effectively.
-              Meanwhile, translation services have become more accurate and can now handle complex sentences and idiomatic expressions.
-            </P>
-     
-     
+    <!--<section class="inner-page">
+      <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contact-us-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
           </div>
-          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div class="success-message">
+          <p>Your message has been sent successfully.</p>
+        </div>
+      </div>
+    
+    </section>-->
+
+    <section id="contact" class="contact">
+      <div class="section-title" data-aos="zoom-out">
+        <p class="innerpagetext">Contact Us</p>
+      </div>
+      <div class="container">
+
+        <div class="row" style="margin-top: 30px;">
+          <div class = "col-lg-2"></div>
+          <div class="col-lg-8 mt-5 " data-aos="fade-left">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
 
         </div>
-        
+
       </div>
     </section>
 
